@@ -1,6 +1,10 @@
 {
   "name": "thely-js",
+  "version": "1.0.0",
+  "description": "Thely.io JS SDK",
   "module": "index.ts",
+  "author": "thely-io",
+  "private": false,
   "type": "module",
   "scripts": {
     "build": "bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ./out --target browser"
