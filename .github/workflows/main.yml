@@ -18,6 +18,8 @@ jobs:
         with:
           node-version: '14'
 
+      - run: git config --global user.email "build@github.com"
+      - run: git config --global user.name "GitHub Actions"
       - run: npm version minor
       - uses: oven-sh/setup-bun@v1
       - run: bun install
