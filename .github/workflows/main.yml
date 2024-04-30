@@ -18,10 +18,8 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install Bun
-        run: curl -fsSL https://bun.sh/install | bash
-
       - name: Build package
+        uses: oven-sh/setup-bun@v1
         run: bun run build
 
       - name: Publish to npm
