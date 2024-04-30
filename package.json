@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "Thely.io JS SDK",
   "module": "index.ts",
-  "author": "thely-io",
+  "author": "ajxb",
   "private": false,
   "type": "module",
   "scripts": {
