@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: '14'
 
+      - run: npm version minor
       - uses: oven-sh/setup-bun@v1
       - run: bun install
       - run: bun run build
-      - run: npm version minor
 
       - name: Publish to npm
         env:
