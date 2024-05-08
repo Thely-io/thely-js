@@ -1,6 +1,6 @@
 {
   "name": "thely-js",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Thely.io JS SDK",
   "module": "index.ts",
   "author": "ajxb",
