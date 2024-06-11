@@ -1,6 +1,6 @@
 {
   "name": "thely",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Thely.io JavaScript SDK, allows you to integrate Thely.io into your website or app.",
   "module": "index.ts",
   "author": "ajxb",
