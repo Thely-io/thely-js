@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "build": "bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ./out --target browser",
-    "prepublish": "for file in ./out/index.js ./out/schemas.js ./out/types.js ./out/utils.js ./out/lib/hooks/useInit.js ./out/lib/hooks/useMe.js ./out/lib/hooks/useQuery.js ./out/lib/hooks/useShippingRates.js; do echo \"'use client'\n\n\" | cat - \"$file\" >> temp && mv temp \"$file\"; done",
+    "prepublish": "for file in ./out/index.js ./out/schemas.js ./out/types.js ./out/utils.js ./out/lib/hooks/useInit.js ./out/lib/hooks/useMe.js ./out/lib/hooks/useQuery.js ./out/lib/hooks/useShippingRates.js; do echo \"'use client'\n\n\" | cat - \"$file\" >> temp && mv temp \"$file\"; done && git add . && && git commit -m 'Adding client-side code' && git push",
     "release": "npm version patch && npm publish"
   },
   "devDependencies": {
