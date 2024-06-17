@@ -1,4 +1,7 @@
 {
+  "include": [
+    "src/**/*.ts",
+  ],
   "compilerOptions": {
     // Enable latest features
     "lib": ["dom", "dom.iterable", "esnext"],
