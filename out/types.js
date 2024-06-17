@@ -1,6 +1,3 @@
-'use client'
-
-
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getProtoOf = Object.getPrototypeOf;
@@ -29,7 +26,6 @@ var __export = (target, all) => {
 };
 
 // types.ts
-"use client";
 var EAddressType;
 (function(EAddressType2) {
   EAddressType2["shipping"] = "shipping";

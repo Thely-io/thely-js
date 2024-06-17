@@ -1,6 +1,3 @@
-'use client'
-
-
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getProtoOf = Object.getPrototypeOf;
@@ -2024,7 +2021,6 @@ axios.default = axios;
 var axios_default = axios;
 
 // index.ts
-"use client";
 var axiosApiInstance = axios_default.create({
   baseURL: "https://api.thely.io/api/v1/"
 });

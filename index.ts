@@ -1,4 +1,3 @@
-'use client';
 import axios, { type AxiosInstance } from 'axios';
 import { z } from 'zod';
 import {

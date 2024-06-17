@@ -1,6 +1,3 @@
-'use client'
-
-
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getProtoOf = Object.getPrototypeOf;
@@ -2827,14 +2824,12 @@ var SWRConfig2 = OBJECT.defineProperty(SWRConfig, "defaultValue", {
 var useSWR = withArgs(useSWRHandler);
 
 // lib/hooks/useQuery.ts
-"use client";
 var useQuery = (key, config) => {
   const { data, mutate: mutate2, isLoading, error, isValidating } = useSWR(key ?? null, config);
   return { data: data?.data, mutate: mutate2, isLoading, error, isValidating };
 };
 
 // lib/hooks/useMe.ts
-"use client";
 var useMe = (disabled = false, strict = false) => {
   const { data, error, mutate: mutate2, isValidating, isLoading } = useQuery(disabled ? null : "customer/me", {
     revalidateOnFocus: true

@@ -1,6 +1,3 @@
-'use client'
-
-
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getProtoOf = Object.getPrototypeOf;
@@ -57,7 +54,6 @@ function convertToTwoLetterCode(input) {
   }
   return;
 }
-"use client";
 var useCountries = () => {
   return Object.values(e).map((country) => ({
     value: g(country.name),

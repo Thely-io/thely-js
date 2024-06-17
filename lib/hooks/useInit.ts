@@ -1,4 +1,3 @@
-'use client';
 import { useQuery } from './useQuery';
 
 export const useInit = (accountId: string) => {

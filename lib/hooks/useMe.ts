@@ -1,4 +1,3 @@
-'use client';
 import { useQuery } from './useQuery.ts';
 import { EUnit } from '../../types.ts';
 

@@ -1,4 +1,3 @@
-'use client';
 import { useRequest } from '@ajxb/userequest';
 import { createShipment } from '../../index';
 import { useEffect } from 'react';

@@ -1,4 +1,3 @@
-'use client';
 import useSWR from 'swr';
 import { type PublicConfiguration } from 'swr/_internal';
 
