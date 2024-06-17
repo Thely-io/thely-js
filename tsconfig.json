@@ -6,7 +6,7 @@
     "jsx": "preserve",
     "allowJs": true,
     "declaration": true,
-    "declarationDir": "out",
+    "declarationDir": ".",
     "declarationMap": true,
     "emitDeclarationOnly": true,
     // Bundler mode

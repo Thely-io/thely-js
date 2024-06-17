@@ -8,8 +8,8 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "prepare": "tsc --emitDeclarationOnly && git add . && git commit -m 'chore: update types' && git push",
-    "build": "bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ./out --target browser",
+    "prepare": "cd src && tsc --emitDeclarationOnly && git add . && git commit -m 'chore: update types' && git push",
+    "build": "cd src && bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ../ --target browser",
     "release": "npm version patch && npm publish"
   },
   "devDependencies": {
