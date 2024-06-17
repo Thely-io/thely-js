@@ -11,6 +11,7 @@
   "private": false,
   "type": "module",
   "scripts": {
+    "prepare": "tsc --emitDeclarationOnly && git add . && git commit -m 'chore: update types' && git push",
     "build": "bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ./out --target browser",
     "release": "npm version patch && npm publish"
   },

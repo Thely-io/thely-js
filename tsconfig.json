@@ -5,12 +5,14 @@
     "module": "esnext",
     "jsx": "preserve",
     "allowJs": true,
-
+    "declaration": true,
+    "declarationDir": "out",
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
 
     "outDir": "dist",
     // Best practices
