@@ -1,3 +1,4 @@
+'use client';
 export interface CreateConsolidationRequest {
 	from_parcels: PackageData[];
 }

@@ -1,3 +1,4 @@
+'use client';
 import { countries, getCountryCode } from 'countries-list';
 
 export const useCountries = () => {

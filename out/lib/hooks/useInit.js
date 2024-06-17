@@ -2824,12 +2824,14 @@ var SWRConfig2 = OBJECT.defineProperty(SWRConfig, "defaultValue", {
 var useSWR = withArgs(useSWRHandler);
 
 // lib/hooks/useQuery.ts
+"use client";
 var useQuery = (key, config) => {
   const { data, mutate: mutate2, isLoading, error, isValidating } = useSWR(key ?? null, config);
   return { data: data?.data, mutate: mutate2, isLoading, error, isValidating };
 };
 
 // lib/hooks/useInit.ts
+"use client";
 var useInit = (accountId) => {
   const { data, error } = useQuery(`app/init/${accountId}`);
   return {

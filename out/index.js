@@ -2021,6 +2021,7 @@ axios.default = axios;
 var axios_default = axios;
 
 // index.ts
+"use client";
 var axiosApiInstance = axios_default.create({
   baseURL: "https://api.thely.io/api/v1/"
 });

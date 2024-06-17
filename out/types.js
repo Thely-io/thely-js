@@ -26,6 +26,7 @@ var __export = (target, all) => {
 };
 
 // types.ts
+"use client";
 var EAddressType;
 (function(EAddressType2) {
   EAddressType2["shipping"] = "shipping";

@@ -54,6 +54,7 @@ function convertToTwoLetterCode(input) {
   }
   return;
 }
+"use client";
 var useCountries = () => {
   return Object.values(e).map((country) => ({
     value: g(country.name),

@@ -11973,6 +11973,7 @@ axios.default = axios;
 var axios_default = axios;
 
 // index.ts
+"use client";
 var axiosApiInstance = axios_default.create({
   baseURL: "https://api.thely.io/api/v1/"
 });
@@ -11999,6 +12000,7 @@ var createAddress = async (data3) => await axiosApiInstance.post("customer/addre
 // lib/hooks/useShippingRates.ts
 var userequest = __toESM(require_dist(), 1);
 var import_react = __toESM(require_react(), 1);
+"use client";
 var useShippingRates = (parcel, address) => {
   const {
     createShipmentRequest,
