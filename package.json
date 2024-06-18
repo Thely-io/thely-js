@@ -21,16 +21,6 @@
     "build": "cd src && bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ../ --target browser",
     "release": "npm version patch && npm publish"
   },
-  "exports": {
-    "types": "./types.d.ts",
-    "utils": "./utils.d.ts",
-    "schemas": "./schemas.d.ts",
-    "hooks/useQuery": "./lib/hooks/useQuery.d.ts",
-    "hooks/useInit": "./lib/hooks/useInit.d.ts",
-    "hooks/useMe": "./lib/hooks/useMe.d.ts",
-    "hooks/useShippingRates": "./lib/hooks/useShippingRates.d.ts",
-    "default": "./index.js"
-  },
   "engines": {
     "node": ">=16"
   },
