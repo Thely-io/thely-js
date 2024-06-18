@@ -22,7 +22,14 @@
     "release": "npm version patch && npm publish"
   },
   "exports": {
-    "default": "./index.js"
+    "default": "./dist/index.js",
+    "types": "./dist/types.d.ts",
+    "utils": "./dist/utils.d.ts",
+    "schemas": "./dist/schemas.d.ts",
+    "useQuery": "./dist/lib/hooks/useQuery.d.ts",
+    "useInit": "./dist/lib/hooks/useInit.d.ts",
+    "useMe": "./dist/lib/hooks/useMe.d.ts",
+    "useShippingRates": "./dist/lib/hooks/useShippingRates.d.ts"
   },
   "engines": {
     "node": ">=16"
