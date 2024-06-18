@@ -19,7 +19,7 @@
   "scripts": {
     "prepare": "cd src && tsc --emitDeclarationOnly && cd .. && git add . && git diff --cached --exit-code || (git commit -m 'adding types' && git push)",
     "build": "cd src && bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ../ --target browser",
-    "release": "npm version minor && npm publish"
+    "release": "npm version patch && npm publish"
   },
   "exports": {
     "default": "./index.js"
