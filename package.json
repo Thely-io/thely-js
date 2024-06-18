@@ -1,13 +1,23 @@
 {
   "name": "thely",
-  "version": "1.0.18",
+  "version": "1.0.17",
   "description": "Thely.io JavaScript SDK, allows you to integrate Thely.io into your website or app.",
   "module": "out/index.js",
   "main": "out/index.js",
   "author": "ajxb",
   "private": false,
+  "files": [
+    "lib",
+    "index.*",
+    "types.*",
+    "utils.*",
+    "schemas.*",
+    "package.json",
+    "README.md"
+  ],
   "type": "module",
   "scripts": {
+    "prepare": "cd src && tsc --emitDeclarationOnly && cd .. && git add . && git commit -m 'chore: update types' && git push",
     "build": "cd src && bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ../ --target browser",
     "release": "npm version patch && npm publish"
   },
