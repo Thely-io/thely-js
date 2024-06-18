@@ -25,10 +25,11 @@
     "types": "./types.d.ts",
     "utils": "./utils.d.ts",
     "schemas": "./schemas.d.ts",
-    "lib/hooks/useQuery": "./lib/hooks/useQuery.d.ts",
-    "lib/hooks/useInit": "./lib/hooks/useInit.d.ts",
-    "lib/hooks/useMe": "./lib/hooks/useMe.d.ts",
-    "lib/hooks/useShippingRates": "./lib/hooks/useShippingRates.d.ts"
+    "hooks/useQuery": "./lib/hooks/useQuery.d.ts",
+    "hooks/useInit": "./lib/hooks/useInit.d.ts",
+    "hooks/useMe": "./lib/hooks/useMe.d.ts",
+    "hooks/useShippingRates": "./lib/hooks/useShippingRates.d.ts",
+    "default": "./index.js"
   },
   "engines": {
     "node": ">=16"
