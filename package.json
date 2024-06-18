@@ -8,7 +8,6 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "prepare": "cd src && tsc --emitDeclarationOnly && cd .. && git add . && git commit -m 'chore: update types' && git push",
     "build": "cd src && bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ../ --target browser",
     "release": "npm version patch && npm publish"
   },
