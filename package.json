@@ -1,6 +1,6 @@
 {
   "name": "thely",
-  "version": "1.0.19",
+  "version": "1.0.18",
   "description": "Thely.io JavaScript SDK, allows you to integrate Thely.io into your website or app.",
   "module": "out/index.js",
   "main": "out/index.js",
@@ -17,16 +17,25 @@
   ],
   "type": "module",
   "scripts": {
+    "prepare": "cd src && tsc --emitDeclarationOnly && cd .. && git add . && git commit -m 'chore: update types' && git push",
     "build": "cd src && bun build ./index.ts ./schemas.ts ./types.ts ./utils.ts ./lib/hooks/*  --outdir ../ --target browser",
     "release": "npm version patch && npm publish"
+  },
+  "exports": {
+    "default": "./index.js"
+  },
+  "engines": {
+    "node": ">=16"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/react": "^18.3.1",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.2",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "dependencies": {
     "@ajxb/userequest": "^1.3.2",

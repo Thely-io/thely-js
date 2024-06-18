@@ -4,6 +4,8 @@
   ],
   "exclude": [],
   "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     // Enable latest features
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
