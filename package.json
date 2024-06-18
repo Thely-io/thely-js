@@ -28,8 +28,7 @@
     "lib/hooks/useQuery": "./dist/lib/hooks/useQuery.d.ts",
     "lib/hooks/useInit": "./dist/lib/hooks/useInit.d.ts",
     "lib/hooks/useMe": "./dist/lib/hooks/useMe.d.ts",
-    "lib/hooks/useShippingRates": "./dist/lib/hooks/useShippingRates.d.ts",
-    "default": "./dist/index.js"
+    "lib/hooks/useShippingRates": "./dist/lib/hooks/useShippingRates.d.ts"
   },
   "engines": {
     "node": ">=16"
